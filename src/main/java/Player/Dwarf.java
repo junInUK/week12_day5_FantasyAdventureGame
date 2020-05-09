@@ -1,6 +1,7 @@
 package Player;
 
 import Behavior.IWeapon;
+import GameBuildin.Enemy;
 
 public class Dwarf extends Fighter{
 
@@ -12,7 +13,8 @@ public class Dwarf extends Fighter{
         this.changeWeapon(weapon);
     }
 
-    public void attack() {
+    public void attack(Enemy enemy) {
 
     }
+
 }

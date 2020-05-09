@@ -20,6 +20,9 @@ public class Barbarian extends Fighter{
             this.setHealthPoint(0);
             System.out.println("You died!Game over!");
         }
-
+        enemy.loseHealthPoint(this.getWeapon().getDamageValue());
     }
+
+
+
 }

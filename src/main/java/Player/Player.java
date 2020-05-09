@@ -40,4 +40,14 @@ public abstract class Player {
     public int getCarryWeight() {
         return carryWeight;
     }
+
+    public boolean isDead(){
+        return 0 == this.healthPoint? true:false;
+    }
+
+    public void collectTreasures(ArrayList<Treasure> treasures){
+        for(Treasure treasure : treasures){
+            this.Inventory.add(treasure);
+        }
+    }
 }
